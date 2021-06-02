@@ -1,0 +1,23 @@
+{
+  "name": "filter_camera_image",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.26.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "browser-sync start --server --files '*.css, *.html, *.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PdoubleU/Filter_camera_image.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PdoubleU/Filter_camera_image/issues"
+  },
+  "homepage": "https://github.com/PdoubleU/Filter_camera_image#readme"
+}
