@@ -1,6 +1,6 @@
 # Filter video from your webcam: edge detection
 
-![GitHub Logo](/images/app_demo.bmp)
+![GitHub Logo](/images/filter_edge_detection.bmp)
 
 
 [Lets go to live preview](https://pdoubleu.github.io/Filter_camera_image/)
