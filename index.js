@@ -4,7 +4,6 @@ const ctx = canvas.getContext('2d');
 const strip = document.querySelector('.strip');
 const snap = document.querySelector('.snap');
 
-
 function getVideo() {
     // function gets data from users camera and play it in video element:
     navigator.mediaDevices.getUserMedia({video: true, audio: false})
@@ -16,7 +15,6 @@ function getVideo() {
             console.log("Error", err)
         )
 }
-
 
 function paintToCanvas() {
     // this code captures the data from streamed video and filter it through provided function which is executed in interval
@@ -94,7 +92,6 @@ function imageEdges(pixels) {
                             rGy += r * Gy[k + 1][l + 1];
                             bGy += b * Gy[k + 1][l + 1];
                             gGy += g * Gy[k + 1][l + 1];
-
                         }
                     }
                 }
@@ -103,24 +100,18 @@ function imageEdges(pixels) {
                 bXY = ~~(Math.sqrt((bGx * bGx) + (bGy * bGy)));
                 gXY = ~~(Math.sqrt((gGx * gGx) + (gGy * gGy)));
             }
-
             // temporary array takes the new set of pixels: red, blue, green and alpha:
             tmpPixels.push(rXY, bXY, gXY, aXY);
             // make sure that we update the prevPixelsRBG value to avoid later demanding calculations:
             prevPixelsRBG = currPixelsRGB;
-
         }
     }
-
     // after looping over all pixels we change array into special array to store rbga values:
     tmpPixels = Uint8ClampedArray.from(tmpPixels);
-
     // we will return new ImageDate:
     returnedImageData = new ImageData(tmpPixels, width, height);
-
     // end of all calculations:
     //console.timeEnd('set of pixels');
-
     return returnedImageData;
 }
 
@@ -131,10 +122,8 @@ function rgbSplit(pixels) {;
         pixels.data[i + 500] = pixels.data[i + 1];
         pixels.data[i - 300] = pixels.data[i + 2];
     }
-
     return pixels;
 }
 
 getVideo();
-
 video.addEventListener('canplay', paintToCanvas);

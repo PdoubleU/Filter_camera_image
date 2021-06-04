@@ -6,19 +6,20 @@ body {
     font-weight: bold;
 }
 .container {
+    background-color: black;
     height: 100vh;
     width: 100vw;
     display: flex;
-    padding: 0 2rem;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 h2 {
-    text-shadow: -6px -6px 6px gray;
+    color: orangered;
 }
 .media-container {
     position: relative;
+    border: 8px solid orangered;
 }
 .photo {
     top: 0;
@@ -27,9 +28,8 @@ h2 {
 .player {
     position: absolute;
     top: 6px;
-    right: 2px;
+    right: 6px;
     width: 120px;
-    height: 80px;
 }
 .strip {
     display: flex;

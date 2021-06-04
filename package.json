@@ -6,9 +6,12 @@
   "dependencies": {
     "browser-sync": "^2.26.14"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.2.0"
+  },
   "scripts": {
-    "start": "browser-sync start --server --files '*.css, *.html, *.js'"
+    "start": "browser-sync start --server --files '*.css, *.html, *.js'",
+    "deploy": "gh-pages -d ./"
   },
   "repository": {
     "type": "git",
