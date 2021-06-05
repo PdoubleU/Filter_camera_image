@@ -3,7 +3,7 @@
 ![GitHub Logo](/images/filter_edge_detection.bmp)
 
 
-[Lets go to live preview](https://pdoubleu.github.io/Filter_camera_image/)
+[Lets go to live preview](https://pdoubleu.github.io/edge_detection/)
 
 Remember to allow this app for webcam access, otherwise it is useless.
 
