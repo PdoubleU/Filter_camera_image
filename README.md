@@ -7,7 +7,7 @@
 
 Remember to allow this app for webcam access, otherwise it is useless.
 
-## About idea:
+## About the idea:
 
 I came across of idea of this application when I was exercising my Java Script skills in a set of tutorials called JavaScript30 by Wes Bos. One tutorial was teaching how to handle video stream from webcam, filter it and render in a canvas element. In the tutorial few simple filters were set up like blur or RBGA manipulation. The author of the tutorial encouraged to make some fancy filter at own. And one year ago I wrote simple code in C to handle images in a very similar way: filtering using different algorithms. One of the hardest was an edge detection. I decided to implement my code from C into JavaScript. But there is a one big difference between computation for one image and computation for multiple images within milliseconds - time needed for calculations. My first implementation was not what I expected. The algorithm for calculation edges is very demanding, it was taking almost one second to calculate one set of pixels - so you can imagine the delay of the rendered image. To work fine, the program required to calculate each captured image in 20 ms intervals, which is quite acceptable for the user's perception. To solve this problem, I inspired myself by game development approach. Here is my inspiration:
 
